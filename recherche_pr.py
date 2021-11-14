@@ -5,10 +5,12 @@ def saisie():
         n = int(input("Entrer n: "))
         valid = 2 <= n <= 20
 
+
 def remplir(n):
     global t
     for i in range(n):
         t[i] = int(input("Entrer un nombre: "))
+
 
 def min_max(t, n):
     global min, max
@@ -19,6 +21,7 @@ def min_max(t, n):
             min = t[i]
         if t[i] > max:
             max = t[i]
+
 
 saisie()
 t = [int()]*n
