@@ -1,8 +1,10 @@
 valid = False
 while valid == False:
     n = int(input("Entrer n:"))
-    valid = n in [2, 20]
-T = n*[""]
+    valid = 2<=n<=20
+T = n*[int()]
+for i in range(n):
+    T[i] = int(input("Entrer un nombre: "))
 
 
 def minimum(T, n):
@@ -21,8 +23,6 @@ def maximum(T, n):
     return max
 
 
-a = int(input("Entrer a: "))
-b = int(input("Entrer b: "))
-min = minimum(a, b)
-max = maximum(a, b)
-print(min, max)
+min = minimum(T, n)
+max = maximum(T, n)
+print(min, "  ", max)
