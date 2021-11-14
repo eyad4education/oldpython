@@ -1,1 +1,2 @@
-### Recherche project with *Function* in _Python_.
+> # **Indorduction & Information**
+### This repository is just for education propose.
